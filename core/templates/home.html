@@ -5,60 +5,373 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>SecureVault AI</title>
 
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
 </head>
 
 <body>
 
-    <!-- Navigation Bar -->
+    <!-- Background Glow -->
+    <div class="bg-circle circle1"></div>
+    <div class="bg-circle circle2"></div>
 
-    <nav>
+    <!-- Navbar -->
+    <nav class="navbar">
 
         <div class="logo">
             🔒 SecureVault AI
         </div>
 
-        <ul>
-
+        <ul class="nav-links">
             <li><a href="#">Home</a></li>
-
-            <li><a href="#">Features</a></li>
-
-            <li><a href="#">About</a></li>
-
-            <li><a href="#">Contact</a></li>
-
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
 
-        <div>
-
+        <div class="nav-buttons">
             <button class="login-btn">Login</button>
-
-            <button class="register-btn">Register</button>
-
+            <button class="register-btn">Get Started</button>
         </div>
 
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
 
-    <section class="hero">
+    <!-- ===========================
+     FEATURES SECTION
+=========================== -->
 
-        <h1>Secure Everything.</h1>
+    <section class="features" id="features">
 
-        <h2>The Future of Personal Cloud Storage</h2>
+        <h2>Why Choose <span>SecureVault AI?</span></h2>
 
-        <p>
-            Store • Protect • Organize • Access Anywhere
+        <p class="section-text">
+            Powerful cloud storage with AI-driven organization,
+            enterprise-grade security, and lightning-fast access.
         </p>
 
-        <button class="start-btn">
-            Get Started
-        </button>
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                <div class="icon">🔒</div>
+                <h3>Military Encryption</h3>
+                <p>Your files are protected with strong encryption.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">🤖</div>
+                <h3>AI Smart Search</h3>
+                <p>Find documents instantly using AI-powered search.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">☁️</div>
+                <h3>Cloud Sync</h3>
+                <p>Access your files from any device, anytime.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">⚡</div>
+                <h3>Lightning Fast</h3>
+                <p>Experience fast uploads and downloads.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">📱</div>
+                <h3>Mobile Friendly</h3>
+                <p>Manage your files easily from your phone.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">📂</div>
+                <h3>Easy Organization</h3>
+                <p>Keep all your documents organized in one place.</p>
+            </div>
+
+        </div>
 
     </section>
+    <!-- Statistics Section -->
+
+    <section class="stats">
+
+        <h2>Trusted Worldwide</h2>
+
+        <p class="stats-text">
+            Millions of users trust SecureVault AI to protect their important files every day.
+        </p>
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+                <h2>10M+</h2>
+                <p>Files Stored</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>99.99%</h2>
+                <p>Uptime</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>256-bit</h2>
+                <p>Encryption</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>50+</h2>
+                <p>Countries</p>
+            </div>
+
+    </section>
+    <!-- Testimonials -->
+
+    <section class="testimonials">
+
+        <h2>What Our Users Say</h2>
+
+        <p class="testimonial-text">
+            Trusted by professionals, students, and businesses around the world.
+        </p>
+
+        <div class="testimonial-grid">
+
+            <div class="testimonial-card">
+
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    "SecureVault AI changed the way I store my important files.
+                    Everything is fast, secure, and easy to use."
+                </p>
+
+                <h4>John Smith</h4>
+
+                <span>Software Engineer</span>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    "The AI search finds my files instantly.
+                    I never waste time searching anymore."
+                </p>
+
+                <h4>Sarah Johnson</h4>
+
+                <span>UI Designer</span>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    "Beautiful interface and military-grade security.
+                    Highly recommended!"
+                </p>
+
+                <h4>Michael Lee</h4>
+
+                <span>Business Owner</span>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Pricing -->
+
+    <section class="pricing" id="pricing">
+
+        <h2>Choose Your Plan</h2>
+
+        <p class="pricing-text">
+            Start for free and upgrade anytime.
+        </p>
+
+        <div class="pricing-grid">
+
+            <!-- Free -->
+
+            <div class="price-card">
+
+                <h3>Free</h3>
+
+                <div class="price">$0</div>
+
+                <ul>
+                    <li>✔ 2 GB Storage</li>
+                    <li>✔ AI Search</li>
+                    <li>✔ Secure Uploads</li>
+                    <li>✔ Email Support</li>
+                </ul>
+
+                <button>Get Started</button>
+
+            </div>
+
+            <!-- Pro -->
+
+            <div class="price-card featured">
+
+                <span class="popular">MOST POPULAR</span>
+
+                <h3>Pro</h3>
+
+                <div class="price">$9<span>/month</span></div>
+
+                <ul>
+                    <li>✔ 1 TB Storage</li>
+                    <li>✔ Unlimited Uploads</li>
+                    <li>✔ AI File Search</li>
+                    <li>✔ File Sharing</li>
+                    <li>✔ Priority Support</li>
+                </ul>
+
+                <button>Choose Pro</button>
+
+            </div>
+
+            <!-- Business -->
+
+            <div class="price-card">
+
+                <h3>Business</h3>
+
+                <div class="price">$29<span>/month</span></div>
+
+                <ul>
+                    <li>✔ Unlimited Storage</li>
+                    <li>✔ Team Collaboration</li>
+                    <li>✔ Admin Dashboard</li>
+                    <li>✔ AI Analytics</li>
+                    <li>✔ 24/7 Premium Support</li>
+                </ul>
+
+                <button>Contact Sales</button>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- FAQ -->
+
+    <section class="faq" id="faq">
+
+        <h2>Frequently Asked Questions</h2>
+
+        <p class="faq-text">
+            Everything you need to know about SecureVault AI.
+        </p>
+
+        <div class="faq-container">
+
+            <details class="faq-item">
+                <summary>Is SecureVault AI free to use?</summary>
+                <p>Yes! You can start with our Free plan and upgrade whenever you need more storage.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>Are my files encrypted?</summary>
+                <p>Absolutely. All files are protected using industry-standard 256-bit encryption.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>Can I access my files from mobile?</summary>
+                <p>Yes. SecureVault AI works on desktops, tablets, and mobile devices.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>Can I share files with others?</summary>
+                <p>Yes. You can securely share files and folders with friends, family, or your team.</p>
+            </details>
+
+        </div>
+
+    </section>
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-about">
+
+                <h2>🔒 SecureVault AI</h2>
+
+                <p>
+                    Secure cloud storage powered by AI.
+                    Store, protect and access your files from anywhere.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <a href="#">Home</a>
+                <a href="#features">Features</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#faq">FAQ</a>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>Support</h3>
+
+                <a href="#">Help Center</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact</a>
+
+            </div>
+
+            <div class="footer-social">
+
+                <h3>Follow Us</h3>
+
+                <div class="social-icons">
+
+                    <a href="#">🌐</a>
+                    <a href="#">📘</a>
+                    <a href="#">🐦</a>
+                    <a href="#">📸</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+            © 2026 SecureVault AI. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <script src="{% static 'js/script.js' %}"></script>
 
 </body>
 
